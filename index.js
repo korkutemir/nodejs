@@ -115,7 +115,7 @@ app.post("/send_server/:id",function(req,res) {
    // res.send({korkut:"emir"});
     console.log(req.body);
 
-const MongoClient = require('node_modules/mongodb').MongoClient;
+const MongoClient = require('mongodb').MongoClient;
 //const URL = 'mongodb://localhost:27017';
 const URL = 'mongodb+srv://megagen:megagen07@cluster0.p6cbt1r.mongodb.net/?authSource=admin';
 
@@ -166,7 +166,7 @@ app.get('/megagen2/:id',function(req,res,next) {
 
     
 
-    const MongoClient = require('node_modules/mongodb').MongoClient;
+    const MongoClient = require('mongodb').MongoClient;
   //  const URL = 'mongodb://localhost:27017';
     const URL = 'mongodb+srv://megagen:megagen07@cluster0.p6cbt1r.mongodb.net/?authSource=admin';
 
