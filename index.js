@@ -4,6 +4,7 @@ var http = require('http');
 var https = require('https');
 //var privateKey  = fs.readFileSync('openssl/private.key', 'utf8');
 //var certificate = fs.readFileSync('openssl/selfsigned.crt', 'utf8');
+var port=process.env.PORT || 3000;
 
 //var credentials = {key: privateKey, cert: certificate};
 var express = require('express');
@@ -478,7 +479,7 @@ var httpServer = http.createServer(app);
     console.log("server 8443");
 }); */
 
-httpServer.listen(8080,ip_1,function() {
+httpServer.listen(port,function() {
     console.log("server 8080");
 });
 
