@@ -5,7 +5,7 @@ var port=process.env.PORT || 3000;
 
 var path=require('path');
 
-app.use(express.static(path.join(__dirname, "assets")));
+app.use(express.static(path.join(__dirname, "/assets")));
 
 app.get('/', function (req, res) {
 
