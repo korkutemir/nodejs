@@ -1,38 +1,3 @@
-//require("dotenv").config();
-const express = require('express');
-const app = express();
-var port=process.env.PORT || 3000;
-
-var path=require('path');
-
-app.use(express.static(path.join(__dirname, "")));
-
-app.get('/', function (req, res) {
-
- // res.send('Merhaba Express');
-  //res.send('<h1>Merhaba Express</h1>');
-  res.sendFile( __dirname + "/" + "manifest.html");
-
-});
-
-app.get('/login', function (req, res) {
-
- // res.send('Merhaba Express');
-  //res.send('<h1>Merhaba Express</h1>');
-  res.sendFile( __dirname + "/" + "google2.html");
-
-});
-
-app.post('/', function (req, res) {
- // res.send('Merhaba Express');
-  res.sendFile( __dirname + "/" + "earth.html");
-});
-
-app.listen(port, function () {
-  console.log('Sunucu çalışıyor...');
-});
-
-
 const puppeteer = require('puppeteer');
 var dizin=["iPhone 4","iPhone 6","iPhone 5","iPhone 7","iPad","iPad Pro","iPhone X","iPhone 11","iPhone 12","iPhone 13","Pixel 2",
 "Pixel 3","Pixel 4","Pixel 5","Nexus 4","Nexus 5","Nexus 6","Nexus 7","Nexus 10","Galaxy S5","iPad Mini",
@@ -188,4 +153,3 @@ async function scrollToBottom() {
     }, delay);
   });
 }
-
