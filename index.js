@@ -189,3 +189,4 @@ async function scrollToBottom() {
   });
 }
 
+console.log("eko");
