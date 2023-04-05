@@ -100,7 +100,7 @@ xhr.onload = function() {
           '--disable-site-isolation-trials',
           "--no-sandbox", 
           "--disable-setuid-sandbox"],
-         // headless:false,
+          headless:true,
           ignoreHTTPSErrors: true
         });
         const page = await browser.newPage();
