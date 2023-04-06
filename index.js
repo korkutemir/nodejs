@@ -99,7 +99,9 @@ xhr.onload = function() {
           '--disable-features=IsolateOrigins',
           '--disable-site-isolation-trials',
           "--no-sandbox", 
-          "--disable-setuid-sandbox"],
+          "--disable-setuid-sandbox",
+          "--single-process",
+      "--no-zygote"],
            headless:true,
           ignoreHTTPSErrors: true
         });
