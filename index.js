@@ -49,7 +49,7 @@ var fs=require("fs");
 
 let xhr = new XMLHttpRequest()
 
-xhr.open( 'GET',  'https://proxylist.geonode.com/api/proxy-list?limit=500&page=1&sort_by=lastChecked&sort_type=desc&country=TR' )
+//xhr.open( 'GET',  'https://proxylist.geonode.com/api/proxy-list?limit=500&page=1&sort_by=lastChecked&sort_type=desc&country=TR' )
 
 //xhr.open("GET","http://free-proxy.cz/en/proxylist/country/TR/socks4/ping/all");
 
