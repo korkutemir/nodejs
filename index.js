@@ -59,7 +59,7 @@ xhr.onload = function() {
         
       //  console.log( xhr.responseText );
 
-        console.log(JSON.parse(xhr.responseText));
+        //console.log(JSON.parse(xhr.responseText));
                
 
       //  var delek_file=JSON.stringify(xhr.responseText);
