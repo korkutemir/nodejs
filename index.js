@@ -82,8 +82,8 @@ xhr.onload = function() {
         try {
         var dizin_length=parseInt(dizin.length)-1;
         var delek1=dizin[Math.floor(Math.random()*dizin_length)];
-        console.log(delek1);
-        const iPhone = puppeteer.devices[delek1];
+       // console.log(delek1);
+       // const iPhone = puppeteer.devices[delek1];
        console.log(JSON.parse(xhr.responseText).data[number_1].ip);
           
        /* if(await timer_1==2) {
@@ -107,10 +107,10 @@ xhr.onload = function() {
         });
         const page = await browser.newPage();
         await page.authenticate();
-        await page.emulate(iPhone);
+       // await page.emulate(iPhone);
         
   
-        await page.goto('https://mega.cyclic.app/delek',{waitUntil: "networkidle2"});
+        await page.goto('https://antalyasektorel.com.tr/',{waitUntil: "networkidle2"});
        
         page.on('error', err=> {
           console.log('error happen at the page: ', err);
