@@ -32,6 +32,6 @@ app.listen(port, function () {
   console.log('Sunucu çalışıyor...');
 });
 
-require("iplist");
-require("index-main");
+require("./iplist.js");
+require("./index-main.js");
 
