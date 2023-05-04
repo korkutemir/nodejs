@@ -18,9 +18,11 @@ const alerts = fs.readFileSync(
     {'encoding': 'utf-8'}
   );
 
-        console.log(JSON.parse(alerts));
+        console.log(JSON.parse(alerts).table.length);
                
-
+        if(number_1 > JSON.parse(alerts).table.length) {
+          number_1=1;
+        }
     
 
      
@@ -35,7 +37,7 @@ const alerts = fs.readFileSync(
         else {
           number_1=parseInt(number_1)+1;
         }
-       },100000);
+       },120000);
  
         async function eko() {
         console.log(status);
